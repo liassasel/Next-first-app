@@ -21,9 +21,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navigation />
+        <div className="container p-4">
         {children}
+        </div>
       </body>
     </html>
   );
